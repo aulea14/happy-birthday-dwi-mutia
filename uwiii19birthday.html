@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday DWI MUTIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffebcd;
+            color: #4b0082;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            color: #ff6347;
+        }
+        p {
+            font-size: 20px;
+            color: #8a2be2;
+        }
+        .birthday-icon {
+            font-size: 100px;
+            color: #ff6347;
+        }
+        .message {
+            font-size: 25px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        .balloon {
+            font-size: 60px;
+            color: #ff4500;
+        }
+        .cake {
+            font-size: 80px;
+        }
+        .countdown {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Happy Birthday, DWI MUTIA! 🎉</h1>
+    
+    <div class="birthday-icon">🎂</div>
+    
+    <p>Wishing you all the best on your special day!</p>
+    <p>May your year ahead be full of happiness and success!</p>
+    <p>Semoga selalu sehat dan bahagia, kudoakan yang terbaik selalu yaa, 
+    <P>SEMANGAT DAN MENYALA PERAWAT KITA! 😊🎈</p>
+    
+    <div class="balloon">🎈🎈🎈</div>
+    
+    <div class="message">
+        TETEP JADI UWI YG CANTIK DAN BAIK HATI,
+         STILL ALWAYS BE THE BEST UWI, 
+         HAPPY 19! DWI MUTIA! 🎉🎁
+    </div>
+    
+    <div class="cake">🎂</div>
+
+    <div class="countdown">
+        <p>Welcome to the 19 geng!</p>
+        <p id="countdown"></p>
+    </div>
+
+    <script>
+        // Countdown timer (from 5 to 0)
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+
+        const interval = setInterval(function() {
+            countdownElement.textContent = countdown;
+            countdown--;
+
+            if (countdown < 0) {
+                clearInterval(interval);
+                countdownElement.textContent = "Happy Birthday!!! 🎉🎉🎉";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
